@@ -1,0 +1,29 @@
+body{
+    background-color: white;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background: #ffffff;
+    padding: 20px;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    border-color: #000;
+    box-shadow: #000;
+}
+button{
+    margin-top: auto;
+    padding : 10px 20px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #0056b3;
+}
+#question{
+    font-style: bold;
+}
