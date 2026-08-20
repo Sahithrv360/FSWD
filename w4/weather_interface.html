@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Dashboard using API</title>
+        <link href="C:\Users\sahit\OneDrive\Desktop\coding\FSWD\bootstrap-5.3.8-dist\css\bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <header>
+        <h3> <img src="images/weather_logo.png" alt="weather_logo" class="img-logo"> Weather Forecast </h1>
+    </header>
+    <body>
+        <div>
+            <p align="center">Check weather conditions & forecast</p>
+        </div>
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="input-group" id="city">
+                        <input type="text" class="form-control" placeholder="Search by city name">
+                        <button class="btn btn-primary" type="submit">get weather</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="error" class="alert alert-danger text-center d-none">
+            City not found. Please enter a valid city.
+        </div>
+
+        <section id="weather" class="container my-4">
+            <div class="current-weather card shadow text-center p-4 mx-auto"style="max-width: 500px;">
+            <h2 id="location" class="fw-bold mb-3"></h2>
+            <div class="temperature display-3 fw-bold mb-3">
+                <span id="temperature"></span>°C
+            </div>
+            <p id="description" class="fs-4 mb-0"></p>
+            </div>
+        <!-- Metrics -->
+        <section id="metrics" class="container my-4" type="hidden">
+            <h2> Metrics </h2>
+            <div id="metrics" class="row g-3">
+            </div>
+        </section>
+        <!-- 5 day forecast -->
+        <section id="forecast" class="container my-5" type="hidden">
+            <h2>5 - day forecast</h2>
+            <div id="forecast" class="row g-3">
+            </div>
+        </section>
+    </body>
+    <footer>
+
+    </footer>
+</html>
