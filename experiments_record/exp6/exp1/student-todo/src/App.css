@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+}
+
+.app {
+  width: 750px;
+  margin: 30px auto;
+  background: white;
+  min-height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  margin: 0;
+}
+
+header p {
+  color: #777;
+}
+
+main {
+  padding: 20px;
+}
+
+.add-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.add-box input[type="text"] {
+  flex: 1;
+  min-width: 180px;
+}
+
+.add-box input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #f1f3f4;
+}
+
+.add-box button {
+  background: #1a73e8;
+  color: white;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.task {
+  padding: 15px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+
+.task-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-top input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.task-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.task-info strong {
+  font-size: 16px;
+}
+
+.task-info small {
+  color: #777;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.delete {
+  font-size: 12px;
+}
+
+.progress-bg {
+  height: 8px;
+  background: #eee;
+  border-radius: 10px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #1a73e8;
+  border-radius: 10px;
+  transition: width 1s;
+}
+
+.task-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Pending */
+
+.pending {
+  border-left: 5px solid #fbbc04;
+}
+
+.pending .status {
+  color: #f29900;
+}
+
+/* Ongoing */
+
+.ongoing {
+  border-left: 5px solid #1a73e8;
+}
+
+.ongoing .status {
+  color: #1a73e8;
+}
+
+/* Delayed */
+
+.delayed {
+  border-left: 5px solid #ea4335;
+  background: #fff5f5;
+}
+
+.delayed .status {
+  color: #ea4335;
+}
+
+.delayed .progress {
+  background: #ea4335;
+}
+
+/* Completed */
+
+.completed {
+  border-left: 5px solid #34a853;
+  background: #f1f8f4;
+}
+
+.completed .status {
+  color: #34a853;
+}
+
+.completed strong {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.empty {
+  color: #888;
+  text-align: center;
+  padding: 20px;
+}
